@@ -249,16 +249,16 @@
                     <form class="modal__form-action">
                         <div class="modal__input-user">
                             <label class="form__input-label" for="user_modal-form"> Имя и Фамилия <span class="user__input-label-rq">*</span> </label>
-                            <input class="modal__form-input" type="text" required placeholder maxlength="50" id="user_modal-form">
+                            <input class="modal__form-input required" type="text" required placeholder maxlength="50" id="user_modal-form">
                         </div>
                         <div class="modal__inputs">
                             <div class="modal__inputs-wrap">
                                 <label class="form__input-label" for="num__input-form">Телефон <span class="user__input-label-rq">*</span></label>
-                                <input class="modal__form-input  type="tel" inputmode="tel" required placeholder="+375 (XX) XXX-XX-XX" id="num__input-form" data-mask="+375 (##) ###-##-##" data-mask-inited="true">
+                                <input class="modal__form-input required"  type="tel" inputmode="tel" required placeholder="+375 (XX) XXX-XX-XX" id="num__input-form" data-mask="+375 (##) ###-##-##" data-mask-inited="true">
                             </div>
                             <div class="modal__inputs-wrap">
                                 <label class="form__input-label" for="email__input-form" >Email <span class="user__input-label-rq">*</span></label>
-                                <input class="modal__form-input  type="email" inputmode="email"  id="email__input-form"  >
+                                <input class="modal__form-input required"  type="email" inputmode="email"  id="email__input-form"  >
                             </div>
                         </div>
                         <div class="modal__textarea" >
@@ -266,7 +266,7 @@
                             <textarea   inputmode="textarea"  id="textarea__input-form"></textarea>
                         </div>
                         <div class="modal__client-check">
-                            <input type="checkbox" required name="form__client-check">
+                            <input type="checkbox required" required name="form__client-check">
                             <label for="modal__client-check">Выражаю свое согласие на обработку персональных данных, ознакомлен с разъяснениями прав.</label>
                         </div>
                         <button class="modal__form-btn">Отправить</button>
@@ -474,14 +474,14 @@
                         <h2>Пора стать клиентом</h2>
                     </div>
                     <form  class="record__form-client">
-                        <input  type="tel" required placeholder="Контактный номер телефона">
+                        <input class="required"  type="tel" required placeholder="Контактный номер телефона">
                         <div class="form__client-wrap">
-                            <input type="text" name="" required placeholder="Как к вам обратиться?">
+                            <input class="required" type="text" name="" required placeholder="Как к вам обратиться?">
                             <input type="text" placeholder="Ссылка (URL) на объявление">
                         </div>
                         <button type="submit">Оставить заявку</button>
                         <div class="form__client-check">
-                            <input type="checkbox" required name="form__client-check" id="form__client-check">
+                            <input class="required" type="checkbox" required name="form__client-check" id="form__client-check">
                             <label for="form__client-check">Соглашаюсь на получение рекламы</label>
                         </div>
                         <p>Оставляя заявку, вы соглашаетесь на <a href="#">обработку персональных данных </a> и <a href="#">условиями бронирования счета</a></p>
@@ -530,7 +530,7 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide swiper__slide-big">
+                            <div class="swiper-slide swiper__slide-big">
                             <div class="v-news-poster news-poster news-poster--big flc">
                                 <div class="news-poster__block">
                                     <div class="news-poster__image-wrap">
