@@ -1,0 +1,239 @@
+.promo {
+    padding: 50px 0;
+}
+.promo .content .promo__wrapper h2 {
+    margin-bottom: 30px;
+}
+.promo .content {
+    position: relative;
+}
+.promo__choice {
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.promo__choice-tittle {
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    transition: .2s;
+    cursor: default;
+    padding: 5px 16px 9px 16px;
+    height: 36px;
+    border-radius: 18px;
+    border: 2px solid #191919;
+    margin-right: 15px;
+
+}
+.active__tittle {
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border:none;
+}
+.promo__card {
+    width: 424px;
+    background-color: var(--color-bg-2);
+    border: none;
+    border-radius: 18px;
+    padding: 40px 32px 20px;
+}
+.promo__card-title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--color-red);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.promo-poster {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 32px 12px 12px;
+    width: 100%;
+    height: 540px;
+    position: relative;
+    background-color: var(--color-bg-2);
+}
+.promo-poster--alt {
+    padding-top: 40px;
+    transition: background-color .2s;
+}
+.promo-poster__title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--color-red);
+    font-weight: 700;
+    max-width: 344px;
+    min-height: 80px;
+    margin: auto auto 0;
+}
+
+.fc:first-child, .flc:first-child {
+    margin-top: 0;
+}
+.promo-poster--alt .promo-poster__title {
+    transition: color .2s;
+    min-height: 0;
+}
+.promo-poster--alt .promo-poster__image-wrap {
+    margin-top: auto;
+}
+.text-guide {
+    color: var(--color-gray);
+}
+.text-guide ul, .text-guide ol {
+    margin: 20px 0;
+}
+.text-guide ul > li, .text-guide ol > li {
+    margin: 0 0 12px;
+    vertical-align: top;
+    padding-left: 28px;
+    position: relative;
+}
+.promo-poster--alt .text-guide ul > li::before {
+    transition: border .2s;
+}
+.text-guide ul > li::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 16px;
+    border-top: 2px solid var(--color-red);
+}
+.promo-poster__content {
+    margin-top: 15px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.promo-poster__image {
+    border-radius: 16px;
+    display: block;
+    width: 100%;
+    height: 272px;
+    object-fit: cover;
+    max-width: 100%;
+}
+.promo-poster--alt .promo-poster__dd-arrow-wrapper {
+    display: none;
+}
+.promo-poster__dd-arrow-wrapper {
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    top: 90%;
+    transform: translateX(-50%);
+    transition: top 0.5s ease-in-out;
+}
+.promo-poster__dd-arrow {
+    height: 28px;
+    width: 64px;
+    border-radius: 16px;
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.promo-poster__dd {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(102%);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 16px;
+}
+
+.promo-card {
+    background-color: var(--color-brand);
+    border-radius: 16px;
+    padding: 32px 32px 40px;
+    transition: box-shadow var(--trs-base);
+}
+.promo-poster--alt .promo-card {
+    padding-top: 40px;
+}
+
+.promo-card__action {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promo-poster--alt .promo-card__action {
+    margin-top: 0;
+}
+.promo-card__action-btn {
+    flex: 0 0 auto;
+}
+.promo-card__btn-arrow {
+    flex: 0 0 auto;
+    margin-left: 20px;
+}
+.btn-arrow__text {
+    font-style: 600;
+    font-size: 1em;
+    color: var(--color-white);
+}
+
+.promo-poster:hover .promo-poster__dd {
+    transform: translateY(0%);
+}
+
+.promo-poster:hover .promo-poster__action {
+    transform: translateY(0%);
+}
+
+.promo-poster:hover .promo-card {
+    box-shadow: 0 -4px 44px 0 rgba(240, 50, 38, 0.5);
+
+}
+
+.promo-poster--alt:hover .promo-poster__dd {
+    transform: translateY(0%);
+}
+
+.promo-poster--alt:hover {
+    background-color: var(--color-red);
+    box-shadow: 0 -4px 44px 0 rgba(240, 50, 38, 0.5);
+}
+.promo-poster--alt:hover .promo-poster__dd  {
+    background-color: var(--color-red);
+}
+
+.promo-poster--alt:hover .promo-poster__title {
+    color: var(--color-white);
+}
+
+.promo-poster--alt:hover .promo-poster__content {
+    color: var(--color-white);
+}
+
+.promo-poster--alt:hover .text-guide ul > li::before {
+    border-top: 2px solid var(--color-white);
+}
+.swiper {
+    overflow: visible !important;
+}
+.promo-card__action-btn{
+    padding: 0 22px;
+    height: 40px;
+    border: none;
+    border-radius: 18px;
+    background-color: var(--color-white);
+    color: var(--color-red);
+    font-weight: 600;
+    font-size: 1em;
+}
+@media (max-width:780px) {
+    .swiper {
+        overflow: hidden !important;
+    }
+}
+
+

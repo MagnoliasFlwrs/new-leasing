@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal__overlay"></div>
+    <div class="overlay"></div>
+    <header class="header">
+
+        <div class="header__wrapper">
+            <div class="content header__box">
+                <a class="logo" href="./index.html"><img src="./src/assets/Лого.png" alt="logo" width="188" height="73"></a>
+                <ul class="navigation">
+                    <li class="link__wrapper">
+                        <a class="nav__link dropdown " href="#">Продукты </a>
+                        <div class="submenu__wrapper">
+                            <div class="submenu__box">
+                                <div class="empty__submenu"></div>
+                                <div class="submenu">
+                                    <div class="submenu__item">
+                                        <a  class="submenu__item-title" href="#"><h3>Заголовок 1</h3></a>
+                                        <ul class="second__submenu">
+                                            <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                                <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                                <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu__item">
+                                        <a class="submenu__item-title" href="#"><h3>Заголовок 2</h3></a>
+                                        <ul class="second__submenu">
+                                            <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                                <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                                <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu__item">
+                                        <a class="submenu__item-title" href="#"><h3>Заголовок 3</h3></a>
+                                        <ul class="second__submenu">
+                                            <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                                <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                                <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                        </ul>
+                                    </div>
+                                <div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="link__wrapper">
+                        <a class="nav__link dropdown " href="#">Партнерам </a>
+                        <div class="submenu__wrapper">
+                            <div class="empty__submenu"></div>
+                            <div class="submenu">
+                                <div class="submenu__item">
+                                    <a class="submenu__item-title" href="#"><h3>Заголовок 1</h3></a>
+                                    <ul class="second__submenu">
+                                        <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                        <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                        <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__item">
+                                    <a class="submenu__item-title" href="#"><h3>Заголовок 2</h3></a>
+                                    <ul class="second__submenu">
+                                        <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                        <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                        <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__item">
+                                    <a class="submenu__item-title" href="#"><h3>Заголовок 3</h3></a>
+                                    <ul class="second__submenu">
+                                        <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                        <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                        <li class="second__submenu__li"><a href="">заголовок</a></li>
+                                    </ul>
+                                </div>
+                        <div>
+                        </div>
+                    </li>
+                    <li class="link__wrapper">
+                        <a class="nav__link dropdown " href="#">О нас </a>
+                        <div class="submenu__wrapper">
+                            <div class="empty__submenu"></div>
+                            <div class="submenu">
+                                <div class="submenu__item">
+                                    <a class="submenu__item-title" href="#"><h3>О Лайт Лизинг</h3></a>
+                                    <ul class="second__submenu">
+                                        <li class="second__submenu__li"><a href="">Новости</a></li>
+                                        <li class="second__submenu__li"><a href="">FAQ: Ответы на вопросы</a></li>
+                                        <li class="second__submenu__li"><a href="">Стать партнером</a></li>
+                                        <li class="second__submenu__li"><a href="">Работа</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__item">
+                                    <a class="submenu__item-title" href="#"><h3>Контакты</h3></a>
+                                    <ul class="second__submenu">
+                                        <li class="second__submenu__li"><a href="">Контакты и реквизиты</a></li>
+                                        <li class="second__submenu__li"><a href="">Наша команда</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__item">
+                                    <a class="submenu__item-title" href="#"><h3>Документы</h3></a>
+                                    <ul class="second__submenu second__submenu__uploads">
+                                        <li  class="second__submenu__li upload__pdf"> <img src="./src/images/pdf-svgrepo-com.svg" alt="" width="35" height="25"> <a href="">Лицензия НБРБ</a></li>
+                                        <li class="second__submenu__li upload__doc"> <img src="./src/images/doc-svgrepo-com.svg" alt="" width="35" height="25"> <a href="">Устав</a></li>
+                                    </ul>
+                                </div>
+                            <div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="nav__btn">Войти</button>
+                    </li>
+                </ul>
+
+                <div class="burger__nav">
+                    <div class="burger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="burger__wrap">
+                        <ul class="burger__links">
+                            <li class="burger__link__item link__wrap">
+                                <a class="burger__link  burger__link__dropdown dropright " href="#">Продукты  </a>
+                                <div class="burger__submenu">
+                                    <div class="link__wrap"><a class="mobile__back__link dropleft" href="#">Назад</a></div>
+
+                                    <div class="burger__submenu__item">
+                                        <div class="link__wrap"><a class=" burger__link  link__to__second dropright" href="#">Заголовок 1</a></div>
+                                        <ul class="submenu3lvl">
+                                            <div class="link__wrap"><a class="mobile__back__link__second dropleft" href="#">Назад</a></div>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="burger__submenu__item">
+                                        <div class="link__wrap"><a class=" burger__link  dropright link__to__second " href="#">Заголовок 2</a></div>
+                                        <ul class="submenu3lvl">
+                                            <div class="link__wrap"><a class="mobile__back__link__second dropleft" href="#">Назад</a></div>
+                                            <li class="link__wrap"><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap"><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap"><a class="burger__link" href="">заголовок</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="burger__submenu__item">
+                                        <div class="link__wrap"><a class=" burger__link  dropright link__to__second " href="#">Заголовок 3</a></div>
+                                        <ul class="submenu3lvl">
+                                            <div class="link__wrap"><a class="mobile__back__link__second dropleft" href="#">Назад</a></div>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                        </ul>
+                                    </div>
+                                <div>
+                            </li>
+                            <li class="burger__link__item link__wrap">
+                                 <a class="burger__link  burger__link__dropdown dropright" href="#">Партнерам </a>
+                                 <div class="burger__submenu">
+                                    <div class="link__wrap"><a class="mobile__back__link dropleft" href="#">Назад</a></div>
+                                    <div class="burger__submenu__item">
+                                        <div class="link__wrap"><a class=" burger__link burger__link__dropdown dropright link__to__second" href="#">Заголовок 1</a></div>
+                                        <ul class="submenu3lvl">
+                                            <div class="link__wrap"><a class="mobile__back__link__second dropleft" href="#">Назад</a></div>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="burger__submenu__item">
+                                        <div class="link__wrap"><a class=" burger__link burger__link__dropdown dropright link__to__second " href="#">Заголовок 1</a></div>
+                                        <ul class="submenu3lvl">
+                                            <div class="link__wrap"><a class="mobile__back__link__second dropleft" href="#">Назад</a></div>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li><a class="burger__link" href="">заголовок</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="burger__submenu__item">
+                                        <div class="link__wrap"><a class=" burger__link burger__link__dropdown dropright link__to__second " href="#">Заголовок 1</a></div>
+                                        <ul class="submenu3lvl">
+                                            <div class="link__wrap"><a class="mobile__back__link__second dropleft" href="#">Назад</a></div>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                            <li class="link__wrap" ><a class="burger__link" href="">заголовок</a></li>
+                                        </ul>
+                                    </div>
+                                <div>
+                            </li>
+                            <li class="burger__link__item link__wrap">
+                                <a class="burger__link  burger__link__dropdown dropright" href="#">О нас </a>
+                                <div class="burger__submenu">
+                                   <div class="link__wrap"><a class="mobile__back__link dropleft" href="#">Назад</a></div>
+                                   <div class="burger__submenu__item">
+                                       <div class="link__wrap"><a class=" burger__link burger__link__dropdown dropright link__to__second " href="#">О Лайт  Лизинг</a></div>
+                                       <ul class="submenu3lvl">
+                                            <div class="link__wrap"><a class="mobile__back__link__second dropleft" href="#">Назад</a></div>
+                                           <li class="link__wrap" ><a class="burger__link" href="">Новости</a></li>
+                                           <li class="link__wrap" ><a class="burger__link" href="">FAQ: Ответы на вопросы</a></li>
+                                           <li class="link__wrap" ><a class="burger__link" href="">Стать партнером</a></li>
+                                       </ul>
+                                   </div>
+                                   <div class="burger__submenu__item">
+                                       <div class="link__wrap"><a class=" burger__link burger__link__dropdown link__to__second dropright " href="#">Контакты</a></div>
+                                       <ul class="submenu3lvl">
+                                        <div class="link__wrap"><a class="mobile__back__link__second dropleft " href="#">Назад</a></div>
+                                           <li class="link__wrap" ><a class="burger__link" href="">Контакты и реквизиты</a></li>
+                                           <li class="link__wrap" ><a class="burger__link" href="">Наша команда</a></li>
+                                       </ul>
+                                   </div>
+                                   <div class="burger__submenu__item">
+                                       <div class="link__wrap"><a class=" burger__link burger__link__dropdown dropright link__to__second " href="#">Документы</a></div>
+                                       <ul class="submenu3lvl submenu__uploads">
+                                            <div class="link__wrap"><a class="mobile__back__link__second dropleft" href="#">Назад</a></div>
+                                            <li class="link__wrap" ><img src="./src/images/pdf-svgrepo-com.svg" alt="" width="35" height="25"><a class="burger__link" href="">Лицензия НБРБ</a></li>
+                                            <li class="link__wrap" ><img src="./src/images/doc-svgrepo-com.svg" alt="" width="35" height="25"><a class="burger__link" href="">Устав</a></li>
+                                       </ul>
+                                   </div>
+                               <div>
+                           </li>
+
+                            <li class="burger__link__item link__wrap"><a class="burger__link" href="#">Войти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <button class="intro__button"> Стать клиентом </button>
+        </section>
+        <section class="promo">
+            <div class="modal__form">
+                <div class="modal__form-close">
+                    <span class="close__btn">Закрыть</span>
+                </div>
+                <div class="modal__form-wrap">
+                    <h2>Заявка</h2>
+                    <form class="modal__form-action">
+                        <div class="modal__input-user">
+                            <label class="form__input-label" for="user_modal-form"> Имя и Фамилия <span class="user__input-label-rq">*</span> </label>
+                            <input class="modal__form-input" type="text" required placeholder maxlength="50" id="user_modal-form">
+                        </div>
+                        <div class="modal__inputs">
+                            <div class="modal__inputs-wrap">
+                                <label class="form__input-label" for="num__input-form">Телефон <span class="user__input-label-rq">*</span></label>
+                                <input class="modal__form-input  type="tel" inputmode="tel" required placeholder="+375 (XX) XXX-XX-XX" id="num__input-form" data-mask="+375 (##) ###-##-##" data-mask-inited="true">
+                            </div>
+                            <div class="modal__inputs-wrap">
+                                <label class="form__input-label" for="email__input-form" >Email <span class="user__input-label-rq">*</span></label>
+                                <input class="modal__form-input  type="email" inputmode="email"  id="email__input-form"  >
+                            </div>
+                        </div>
+                        <div class="modal__textarea" >
+                            <label class="form__input-label" for="textarea__input-form">Комментарий </label>
+                            <textarea   inputmode="textarea"  id="textarea__input-form"></textarea>
+                        </div>
+                        <div class="modal__client-check">
+                            <input type="checkbox" required name="form__client-check">
+                            <label for="modal__client-check">Выражаю свое согласие на обработку персональных данных, ознакомлен с разъяснениями прав.</label>
+                        </div>
+                        <button class="modal__form-btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <div class="promo__wrapper">
+                    <h2>Предметы лизинга</h2>
+                    <div class="promo__choice">
+                        <a class="promo__choice-tittle active__tittle">Для частных лиц</a>
+                        <a class="promo__choice-tittle"> Для бизнеса</a>
+                    </div>
+                    <div class="promo__wrapper-container">
+                        <div class="slider-arrow slider_arrow--prev">
+
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="slider-arrow slider_arrow--next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="swiper promo__slider-wrap">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="v-promo-poster promo-poster promo-poster--alt">
+                                        <div class="promo-poster__title flc">Авто с пробегом</div>
+                                            <div class="promo-poster__image-wrap">
+                                                <div class="promo-poster__content text-guide">
+                                                    <ul>
+                                                        <li>Аванс: от 20%</li>
+                                                        <li>Срок: от 12 до 60 месяцев<br></li>
+                                                        <li>Валюты: BYN, USD, EUR, RUB</li>
+                                                    </ul>
+                                                </div>
+                                            <img class="v-image image promo-poster__image" src="./src/images/promo/524164503737228.webp" alt="">
+                                        </div>
+                                        <div class="promo-poster__dd-arrow-wrapper">
+                                            </div>
+                                            <div class="promo-poster__dd">
+                                            <div class="promo-card">
+                                                <div class="promo-card__action">
+                                                    <button class="promo-card__action-btn">Оставить заявку</button>
+                                                    <div class="promo-card__btn-arrow">
+                                                        <a class="btn-arrow btn-arrow--white" href="./src/pages/auto-abroad/auto-abroad.html">
+                                                        <span class="btn-arrow__text">Подробнее <i class="fa-solid fa-chevron-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="v-promo-poster promo-poster promo-poster--alt">
+                                        <div class="promo-poster__title flc">Новые авто</div>
+                                            <div class="promo-poster__image-wrap">
+                                                <div class="promo-poster__content text-guide">
+                                                    <ul>
+                                                        <li>Аванс: от 20%</li>
+                                                        <li>Срок: от 12 до 60 месяцев<br></li>
+                                                        <li>Валюты: BYN, USD, EUR, RUB</li>
+                                                    </ul>
+                                                </div>
+                                            <img class="v-image image promo-poster__image" src="./src/images/promo/2.webp" alt="">
+                                        </div>
+                                        <div class="promo-poster__dd-arrow-wrapper">
+                                            </div>
+                                            <div class="promo-poster__dd">
+                                            <div class="promo-card">
+                                                <div class="promo-card__action">
+                                                    <button class="promo-card__action-btn">Оставить заявку</button>
+                                                    <div class="promo-card__btn-arrow">
+                                                        <a class="btn-arrow btn-arrow--white" href="./src/pages/auto-abroad/auto-abroad.html">
+                                                        <span class="btn-arrow__text">Подробнее <i class="fa-solid fa-chevron-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="v-promo-poster promo-poster promo-poster--alt">
+                                        <div class="promo-poster__title flc">Авто из-за границы</div>
+                                            <div class="promo-poster__image-wrap">
+                                                <div class="promo-poster__content text-guide">
+                                                    <ul>
+                                                        <li>Аванс: от 20%</li>
+                                                        <li>Срок: от 12 до 60 месяцев<br></li>
+                                                        <li>Валюты: BYN, USD, EUR, RUB</li>
+                                                    </ul>
+                                                </div>
+                                            <img class="v-image image promo-poster__image" src="./src/images/promo/3.webp" alt="">
+                                        </div>
+                                        <div class="promo-poster__dd-arrow-wrapper">
+                                            </div>
+                                            <div class="promo-poster__dd">
+                                            <div class="promo-card">
+                                                <div class="promo-card__action">
+                                                    <button class="promo-card__action-btn">Оставить заявку</button>
+                                                    <div class="promo-card__btn-arrow">
+                                                        <a class="btn-arrow btn-arrow--white" href="./src/pages/auto-abroad/auto-abroad.html">
+                                                        <span class="btn-arrow__text">Подробнее <i class="fa-solid fa-chevron-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="v-promo-poster promo-poster promo-poster--alt">
+                                        <div class="promo-poster__title flc">Мотоциклы</div>
+                                            <div class="promo-poster__image-wrap">
+                                                <div class="promo-poster__content text-guide">
+                                                    <ul>
+                                                        <li>Аванс: от 20%</li>
+                                                        <li>Срок: от 12 до 36 месяцев<br></li>
+                                                        <li>Валюты: BYN, USD, EUR, RUB</li>
+                                                    </ul>
+                                                </div>
+                                            <img class="v-image image promo-poster__image" src="./src/images/promo/4.webp" alt="">
+                                        </div>
+                                        <div class="promo-poster__dd-arrow-wrapper">
+                                            </div>
+                                            <div class="promo-poster__dd">
+                                            <div class="promo-card">
+                                                <div class="promo-card__action">
+                                                    <button class="promo-card__action-btn">Оставить заявку</button>
+                                                    <div class="promo-card__btn-arrow">
+                                                        <a class="btn-arrow btn-arrow--white" href="./src/pages/auto-abroad/auto-abroad.html">
+                                                        <span class="btn-arrow__text">Подробнее <i class="fa-solid fa-chevron-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="v-promo-poster promo-poster promo-poster--alt">
+                                        <div class="promo-poster__title flc">Садовая техника</div>
+                                            <div class="promo-poster__image-wrap">
+                                                <div class="promo-poster__content text-guide">
+                                                    <ul>
+                                                        <li>Аванс: от 20%</li>
+                                                        <li>Срок: от 12 до 60 месяцев<br></li>
+                                                        <li>Валюты: BYN, USD, EUR, RUB</li>
+                                                    </ul>
+                                                </div>
+                                            <img class="v-image image promo-poster__image" src="./src/images/promo/5.webp" alt="">
+                                        </div>
+                                        <div class="promo-poster__dd-arrow-wrapper">
+                                            </div>
+                                            <div class="promo-poster__dd">
+                                            <div class="promo-card">
+                                                <div class="promo-card__action">
+                                                    <button class="promo-card__action-btn">Оставить заявку</button>
+                                                    <div class="promo-card__btn-arrow">
+                                                        <a class="btn-arrow btn-arrow--white" href="./src/pages/auto-abroad/auto-abroad.html">
+                                                        <span class="btn-arrow__text">Подробнее <i class="fa-solid fa-chevron-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="v-promo-poster promo-poster promo-poster--alt">
+                                        <div class="promo-poster__title flc">Техника для ативного отдыха</div>
+                                            <div class="promo-poster__image-wrap">
+                                                <div class="promo-poster__content text-guide">
+                                                    <ul>
+                                                        <li>Аванс: от 20%</li>
+                                                        <li>Срок: от 12 до 60 месяцев<br></li>
+                                                        <li>Валюты: BYN, USD, EUR, RUB</li>
+                                                    </ul>
+                                                </div>
+                                            <img class="v-image image promo-poster__image" src="./src/images/promo/6.webp" alt="">
+                                        </div>
+                                        <div class="promo-poster__dd-arrow-wrapper">
+                                            </div>
+                                            <div class="promo-poster__dd">
+                                            <div class="promo-card">
+                                                <div class="promo-card__action">
+                                                    <button class="promo-card__action-btn">Оставить заявку</button>
+                                                    <div class="promo-card__btn-arrow">
+                                                        <a class="btn-arrow btn-arrow--white" href="./src/pages/auto-abroad/auto-abroad.html">
+                                                        <span class="btn-arrow__text">Подробнее <i class="fa-solid fa-chevron-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="record__form">
+            <div class="content">
+                <div class="record__form-wrap">
+                    <div class="record__form-title">
+                        <h2>Пора стать клиентом</h2>
+                    </div>
+                    <form  class="record__form-client">
+                        <input  type="tel" required placeholder="Контактный номер телефона">
+                        <div class="form__client-wrap">
+                            <input type="text" name="" required placeholder="Как к вам обратиться?">
+                            <input type="text" placeholder="Ссылка (URL) на объявление">
+                        </div>
+                        <button type="submit">Оставить заявку</button>
+                        <div class="form__client-check">
+                            <input type="checkbox" required name="form__client-check">
+                            <label for="form__client-check">Соглашаюсь на получение рекламы</label>
+                        </div>
+                        <p>Оставляя заявку, вы соглашаетесь на <a href="#">обработку персональных данных </a> и <a href="#">условиями бронирования счета</a></p>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section class="questios">
+            <div class="content">
+                <h2>Справочная информация</h2>
+                <div class="questions__examples">
+                    <div class="questions__card">
+                        <img src="./src/images/questions/allo0@2x.webp" alt="questions__card__img" width="360" height="180">
+                        <div class="questions__info">
+                            <h3>Шаблоны документов</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla et facilis hic atque velit beatae esse impedit dolore modi autem.</p>
+                        </div>
+                    </div>
+                    <div class="questions__card">
+                        <img src="./src/images/questions/allo1@2x.webp" alt="questions__card__img" width="360" height="180">
+                        <div class="questions__info">
+                            <h3>Задать вопрос</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla et facilis hic atque velit beatae esse impedit dolore modi autem.</p>
+                        </div>
+                    </div>
+                    <div class="questions__card">
+                        <img src="./src/images/questions/allo1@2x.webp" alt="questions__card__img" width="360" height="180">
+                        <div class="questions__info">
+                            <h3>Задать вопрос</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla et facilis hic atque velit beatae esse impedit dolore modi autem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="content">
+                <h2 class="">Hовости компании <i class="fa-solid fa-chevron-right"></i></h2>
+                <div class="news__wrapper">
+
+                    <div class="swiper news__swiper">
+                        <div class="slider-arrow slider_arrow--prev">
+
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="slider-arrow slider_arrow--next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="v-news-poster news-poster news-poster--big flc">
+                                <div class="news-poster__block">
+                                    <div class="news-poster__image-wrap">
+                                        <a class="news-poster__block-link" href="#"></a>
+                                        <img class="v-image image news-poster__image" src="./src/images/news/newyear.webp"  alt="" >
+                                        <div class="news-poster__info">
+                                            <div class="news-poster__title">С наступающим 2023 годом и Рождеством!</div><div class="news-poster__text">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="v-news-poster news-poster flc">
+                                <div class="news-poster__block">
+                                    <div class="news-poster__image-wrap">
+                                        <a class="news-poster__block-link" href="#"></a>
+                                        <img class="v-image image news-poster__image" src="./src/images/news/6.webp"  alt="" >
+                                        <div class="news-poster__info">
+                                            <div class="news-poster__title">Внесены изменения в общие условия договора лизинга. Редакция 5.04</div>
+                                            <div class="news-poster__text">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-news-poster news-poster flc">
+                                <div class="news-poster__block">
+                                    <div class="news-poster__image-wrap">
+                                        <a class="news-poster__block-link" href="#"></a>
+                                        <img class="v-image image news-poster__image" src="./src/images/news/5.webp"  alt="" >
+                                        <div class="news-poster__info">
+                                            <div class="news-poster__title">Эффективный менеджмент ресурсов или что такое возвратный лизинг</div>
+                                            <div class="news-poster__text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="v-news-poster news-poster flc">
+                                <div class="news-poster__block">
+                                    <div class="news-poster__image-wrap">
+                                        <a class="news-poster__block-link" href="#"></a>
+                                        <img class="v-image image news-poster__image" src="./src/images/news/4.webp"  alt="" >
+                                        <div class="news-poster__info">
+                                            <div class="news-poster__title">“Решение приняли буквально за день” – как семейная пара сменила Шкоду на новенький JAC J7 и осталась довольна</div>
+                                            <div class="news-poster__text">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-news-poster news-poster flc">
+                                <div class="news-poster__block">
+                                    <div class="news-poster__image-wrap">
+                                        <a class="news-poster__block-link" href="#"></a>
+                                        <img class="v-image image news-poster__image" src="./src/images/news/3.webp"  alt="" >
+                                        <div class="news-poster__info">
+                                            <div class="news-poster__title">Итоги отрасли лизинга легковых авто в 2021 г.</div>
+                                            <div class="news-poster__text">
+                                                2 место А-Лизинга в сегментах «Легковые авто для ФЛ» и «Легковые авто для ЮЛ»
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="v-news-poster news-poster flc">
+                                <div class="news-poster__block">
+                                    <div class="news-poster__image-wrap">
+                                        <a class="news-poster__block-link" href="#"></a>
+                                        <img class="v-image image news-poster__image" src="./src/images/news/2.webp"  alt="" >
+                                        <div class="news-poster__info">
+                                            <div class="news-poster__title">Не можете разобраться в тонкостях лизинга? </div>
+                                            <div class="news-poster__text">
+                                                Отвечаем на самые популярные вопросы в области бухгалтерии лизинга
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-news-poster news-poster flc">
+                                <div class="news-poster__block">
+                                    <div class="news-poster__image-wrap">
+                                        <a class="news-poster__block-link" href="#"></a>
+                                        <img class="v-image image news-poster__image" src="./src/images/news/1.webp"  alt="" >
+                                        <div class="news-poster__info">
+                                            <div class="news-poster__title">Выгодно ли покупать авто в условиях дефицита на рынке</div>
+                                            <div class="news-poster__text">
+                                                И вообще, что происходит: где все машины и откуда такие цены?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="content footer__body">
+            <div class="footer__body-left">
+                <div class="left__up-block">
+                    <div class="up__block-wrap">
+                        <ul>
+                            <li><a href="#">Стать партнером</a></li>
+                            <li><a href="#">Юридические документы</a></li>
+                            <li><a href="#">Еще пункт меню</a></li>
+                            <li><a href="#">Снова пункт меню</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Точки оплаты лизинга</a></li>
+                            <li><a href="#">Словарь энокомических терминов</a></li>
+                            <li><a href="#">Еще пункт меню</a></li>
+                        </ul>
+                    </div>
+                    <div class="up__block-wrap">
+                        <ul>
+                            <li><a href=""><h3 class="footer__arrows">Предметы лизинга</h3></a></li>
+                            <li><a href=""><h3 class="footer__arrows">О нас</h3></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href=""><h3 class="footer__arrows">Справочная информация</h3></a></li>
+                            <li><a href=""><h3 class="footer__arrows">Что-то еще</h3></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="cookie__info">
+                    <span> Мы используем cookies для сбора обезличенных данных. Они помогают настраивать рекламу и анализировать трафик. Оставаясь на сайте, вы соглашаетесь на сбор таких данных.</span>
+                </div>
+            </div>
+            <div class="footer__body-right">
+                <ul>
+                    <li><a href=""><h3>Контакты</h3></a></li>
+                    <li><a href=""><h3>Наша команда</h3></a></li>
+                    <li><button>Стать клиентом</button></li>
+                    <li class="footer__social">
+                        <img src="./src/images/vk.svg" alt="" width="35" height="35">
+                        <img src="./src/images/ok.svg" alt="" width="35" height="35">
+                        <img src="./src/images/telegram.svg" alt="" width="35" height="35">
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+
+        const swiper2 = new Swiper(".swiper", {
+            slidesPerView: 3,
+            centeredSlides: false,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.slider_arrow--next',
+                prevEl: '.slider_arrow--prev',
+                disabledClass:'swiper-button-disabled',
+            },
+            breakpoints: {
+                300: {
+                slidesPerView: 1,
+                spaceBetween: 10
+                },
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+                },
+                1124: {
+                slidesPerView: 3,
+                spaceBetween: 30
+                }
+            },
+        });
+
+        const swiper = new Swiper(".news__swiper", {
+            slidesPerView: 3,
+            centeredSlides: false,
+            spaceBetween: 30,
+            grabCursor: true,
+            navigation: {
+                nextEl: '.slider_arrow--next',
+                prevEl: '.slider_arrow--prev',
+                disabledClass:'swiper-button-disabled',
+            },
+            breakpoints: {
+                300: {
+                slidesPerView: 1,
+                spaceBetween: 20
+                },
+                420: {
+                slidesPerView: 1,
+                spaceBetween: 20
+                },
+                1024: {
+                slidesPerView: 2,
+                spaceBetween: 30
+                }
+            },
+        });
+    </script>
+    <script type="module" src="./src/script/script.js"></script>
+</body>
+</html>
