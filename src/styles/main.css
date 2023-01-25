@@ -21,8 +21,8 @@
     --main-bgcolor: #ffffff;
     --second-text-color : #5b5b5b ;
     --color-white: #ffffff;
-    --color-red: #f03226;
-    --color-bg-2: #2e2f30;
+    --color-red: #9299A2;
+    --color-bg-2: #EAECEE;
     --fz-small:16px;
     --lh-small:20px;
     --color-gray:#959595;
@@ -87,7 +87,7 @@ p , a {
     color: var(--color-gray) ;
     font-size: 2.5em;
     z-index: 2;
-    background-color: rgba(17, 17, 17, 0.4);
+    background-color: rgba(207, 207, 207, 0.4);
     border: none;
     border-radius: 50%;
     width: 72px;
@@ -104,7 +104,7 @@ p , a {
     color: var(--color-gray) ;
     font-size: 2.5em;
     z-index: 2;
-    background-color: rgba(17, 17, 17, 0.4);
+    background-color: rgba(207, 207, 207, 0.4);
     border: none;
     border-radius: 50%;
     width: 72px;

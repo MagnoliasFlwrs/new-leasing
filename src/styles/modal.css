@@ -28,7 +28,7 @@
 }
 .modal__form-action {
     width: 600px;
-    background-color: var(--color-bg-2);
+    background-color: var(--color-bg-3);
     padding: 30px 20px;
     border-radius: 18px;
 }
@@ -100,7 +100,7 @@
     height: 40px;
     padding: 0 24px;
     color: var(--color-white);
-    background-color: var(--color-red);
+    background-color: var(--color-gray);
     text-align: center;
     border-radius: 18px;
     border:none;

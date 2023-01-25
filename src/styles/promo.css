@@ -64,7 +64,7 @@
     font-size: 32px;
     line-height: 40px;
     text-align: center;
-    color: var(--color-red);
+    color: var(--main-text-color);
     font-weight: 700;
     max-width: 344px;
     min-height: 80px;
@@ -82,7 +82,7 @@
     margin-top: auto;
 }
 .text-guide {
-    color: var(--color-gray);
+    color: var(--main-text-color);
 }
 .text-guide ul, .text-guide ol {
     margin: 20px 0;
@@ -135,7 +135,7 @@
     border-radius: 16px;
     -webkit-backdrop-filter: saturate(180%) blur(8px);
     backdrop-filter: saturate(180%) blur(8px);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 .promo-poster__dd {
     position: absolute;
@@ -153,7 +153,7 @@
     background-color: var(--color-brand);
     border-radius: 16px;
     padding: 32px 32px 40px;
-    transition: box-shadow var(--trs-base);
+    transition: box-shadow .2s;
 }
 .promo-poster--alt .promo-card {
     padding-top: 40px;
@@ -190,7 +190,7 @@
 }
 
 .promo-poster:hover .promo-card {
-    box-shadow: 0 -4px 44px 0 rgba(240, 50, 38, 0.5);
+    box-shadow: 0 -4px 44px 0 var(--color-red);
 
 }
 
@@ -200,7 +200,7 @@
 
 .promo-poster--alt:hover {
     background-color: var(--color-red);
-    box-shadow: 0 -4px 44px 0 rgba(240, 50, 38, 0.5);
+    box-shadow: 0 -4px 44px 0 var(--color-red);
 }
 .promo-poster--alt:hover .promo-poster__dd  {
     background-color: var(--color-red);
