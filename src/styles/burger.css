@@ -2,6 +2,7 @@
     display: none;
     margin-right: 15px;
     height: 100%;
+    padding-top: 30px;
 }
 .burger {
     position: relative;
@@ -83,7 +84,7 @@
     font-weight: 600;
 }
 
-.mobile__back__link {
+.mobile__back__link , .mobile__back__link__second{
     color: var(--color-red);
     line-height: 1.6;
     font-weight: 600;
@@ -178,4 +179,7 @@ body._lock {
     opacity: 1;
     visibility: visible;
     transition: all 0.5s;
+}
+.burger__pdf , .burger__doc {
+    display: flex ;
 }

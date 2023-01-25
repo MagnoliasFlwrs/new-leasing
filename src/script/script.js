@@ -101,7 +101,7 @@ if (e.target.classList.contains('burger__link__dropdown')) {
 linksToSecond.forEach((link) => {
   link.addEventListener('click' ,(e) => {
       clearClasses(e)
-      e.target.closest('.burger__submenu__item').querySelector('.second__menu').classList.add('__transformation');
+      e.target.closest('.burger__submenu__item').querySelector('.submenu3lvl').classList.add('__transformation');
       linksToSecond.forEach((link) => {
           link.classList.remove('dropright')
       })
@@ -109,7 +109,7 @@ linksToSecond.forEach((link) => {
 })
 secondMobileBack.forEach((link) => {
   link.addEventListener('click', (e) => {
-      e.target.closest('.burger__submenu__item').querySelector('.second__menu').classList.remove('__transformation');
+      e.target.closest('.burger__submenu__item').querySelector('.submenu3lvl').classList.remove('__transformation');
       e.target.closest('.burger__link__item').querySelector('.burger__submenu').classList.add('__transform');
       linksToSecond.forEach((link) => {
           link.classList.add('dropright')

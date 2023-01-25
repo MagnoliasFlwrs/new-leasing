@@ -90,7 +90,11 @@
 .news-poster__text {
     margin-top: 16px;
 }
-@media (max-width:780px) {
+.swiper__slide-big {
+    max-width: 800px ;
+    width: 100% !important;
+}
+@media (max-width:1024px) {
     .swiper {
         overflow: hidden !important;
     }
