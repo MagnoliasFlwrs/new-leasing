@@ -50,7 +50,7 @@
     flex-direction: column;
     border-radius: 16px;
     overflow: hidden;
-    padding: 32px 12px 12px;
+    padding: 32px 0 0;
     width: 100%;
     height: 540px;
     position: relative;
@@ -80,6 +80,13 @@
 }
 .promo-poster--alt .promo-poster__image-wrap {
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+.promo-poster--alt .promo-poster__image-wrap > img {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
 }
 .text-guide {
     color: var(--main-text-color);
@@ -106,16 +113,16 @@
 }
 .promo-poster__content {
     margin-top: 15px;
-    padding: 0 20px;
+    padding: 0 32px;
     margin-bottom: 30px;
 }
 
 .promo-poster__image {
-    border-radius: 16px;
     display: block;
     width: 100%;
     height: 272px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: right;
     max-width: 100%;
 }
 .promo-poster--alt .promo-poster__dd-arrow-wrapper {
