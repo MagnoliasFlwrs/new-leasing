@@ -1,4 +1,4 @@
-.modal__form {
+/* .modal__form {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -127,4 +127,193 @@
     .modal__input-user {
         margin-bottom: 10px;
     }
+} */
+
+
+
+.hide-modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.modal-block {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal__form-descr {
+    padding: 15px 0;
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--main-text-color) !important;
+}
+.modal-block {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000000db;
+    transition: 0.3s;
+}
+.modal-block .close-modal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 55px;
+    transform: translateY(-30px);
+}
+.modal-block .close-modal button {
+    padding: 10px;
+    position: relative;
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    border-radius: 50%;
+}
+.modal-block .close-modal button::before {
+    transform: rotate(45deg);
+}
+.modal-block .close-modal button::after {
+    transform: rotate(-45deg);
+}
+.modal-block .close-modal button::before, .modal-block .close-modal button::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 4px;
+    background-color: gray;
+    border-radius: 20px;
+    right: calc(50% - 13px);
+    top: calc(50% - 2px);
+    transition: 0.3s;
+}
+
+.modal-block .close-modal button::before, .modal-block .close-modal button::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 4px;
+    background-color: gray;
+    border-radius: 20px;
+    right: calc(50% - 13px);
+    top: calc(50% - 2px);
+    transition: 0.3s;
+}
+.modal-block .modal-content {
+    transform: translateY(-30px);
+    border-radius: 20px;
+    padding: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    gap: 40px;
+}
+.modal-block .modal-content .img-model-block {
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.modal-block .modal-content .img-model-block img {
+    margin-bottom: 50px;
+}
+.modal-block .modal-content .form-modal-block p {
+    padding: 15px 0;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.my-text-area {
+    width: 100%;
+    resize: none;
+    border: 1px solid #ced4da;
+    padding: 10px 15px;
+}
+.modal-separator {
+    width: 100%;
+    border-bottom: 1px solid #ced4da;
+    margin: 10px 0;
+}
+.my-input {
+    position: relative;
+}
+.my-input input {
+    display: block;
+    width: 100%;
+    padding: 0.775rem 0.75rem 0.275rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    box-sizing: border-box;
+    max-width: 300px;
+    height: 40px;
+}
+.modal-block .modal-content .form-modal-block .modal-form .my-input input {
+    width: 100% !important;
+    max-width: unset;
+}
+.my-input label {
+    position: absolute;
+    left: 2%;
+    top: 30%;
+    color: gray;
+    font-size: 1rem;
+    transition: .3s;
+}
+.modal-block .modal-content .form-modal-block .button-send-modal-data {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.modal-block .modal-content .form-modal-block .button-send-modal-data button {
+    background-color: #24387f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.modal-block .modal-content .form-modal-block p {
+    padding: 15px 0;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #fff;
+}
+.success-block {
+    border-radius: 20px;
+    padding: 45px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    gap: 10px;
+}
+.modal-display-none {
+    display: none !important;
 }

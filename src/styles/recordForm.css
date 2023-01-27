@@ -26,8 +26,8 @@
     margin-bottom: 25px;
 }
 input:focus {
-    border: none;
-    box-shadow: -1px 0px 30px 3px var(--color-red);
+    /* border: none; */
+    appearance: none;
     outline: none;
 }
 .form__client-wrap {

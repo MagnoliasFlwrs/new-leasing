@@ -281,7 +281,7 @@
             <button class="intro__button"> Стать клиентом </button>
         </section>
         <section class="promo">
-            <div class="modal__form">
+            <!-- <div class="modal__form">
                 <div class="modal__form-close">
                     <span class="close__btn">Закрыть</span>
                 </div>
@@ -313,7 +313,52 @@
                         <button class="modal__form-btn">Отправить</button>
                     </form>
                 </div>
-            </div>
+            </div> -->
+            <div class="modal-block shadow-block">
+                <div class="close-modal">
+                    <button class="button-modal-close" type="button"></button>
+                </div>
+                <div class="modal-content">
+                    <div class="img-model-block">
+                        <div><img src="./src/images/logo.png" alt="" width="45" height="55"></div>
+                        <img src="./src/" alt="картинка">        </div>
+                    <div class="form-modal-block">
+                        <h2>Получить консультацию</h2>
+                        <p class="modal__form-descr">Согласно корпоративной этике, мы перезваниваем в рабочие дни с 9-00 до 18-00. Если необходимо быстрее, напишите в комментарии</p>
+                        <form class="modal-form">
+                            <textarea class="my-text-area" name="comment" id="textarea" cols="30" rows="10" placeholder="Комментарий"></textarea>
+
+                            <div class="modal-separator"></div>
+                            <div class="my-input">
+                                <input id="name" type="text">
+                                <label for="name">Имя</label>
+                            </div>
+                            <div class="modal-separator"></div>
+                            <div class="my-input">
+                                <input id="phone" type="tel">
+                                <label for="phone">Телефон</label>
+                            </div>
+                        </form>
+                        <div class="modal-separator"></div>
+                        <div class="button-send-modal-data">
+                            <button class="my-button">
+                                <p>Отправить</p>
+                                <div class="load-wrapp">
+                                    <div class="load-3">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </button></div>
+                        </div>
+                    </div>
+                    <div class="success-block modal-display-none">
+                        <h2>Сообщение отправлено</h2>
+                        <p>В ближайшее время c вами свяжется наш оператор </p>
+                        <button class="my-button">Хорошо</button>
+                    </div>
+                </div>
             <div class="content">
                 <div class="promo__wrapper">
                     <h2>Предметы лизинга</h2>

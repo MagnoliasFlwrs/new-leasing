@@ -10,10 +10,6 @@ const secondMobileBack = document.querySelectorAll('.mobile__back__link__second'
 const linkWraps = document.querySelectorAll('.link__wrapper')
 const overlay = document.querySelector('.overlay');
 const burgerLinks = document.querySelectorAll('.burger__navigation__item')
-const promoBtns = document.querySelectorAll('.promo-card__action-btn')
-const promoModal = document.querySelector('.modal__form')
-const closeModal = document.querySelector('.modal__form-close')
-const modalOverlay = document.querySelector('.modal__overlay')
 const submenuWrapper = document.querySelector('.submenu__wrapper')
 
 
@@ -134,25 +130,36 @@ secondMobileBack.forEach((link) => {
 //       })
 //   })
 // })
-// promo modal
 
-promoBtns.forEach((btn) => {
-  btn.addEventListener('click' , () => {
-    modalOverlay.classList.add('open')
-    promoModal.classList.add('opn')
-  })
-})
-const modalClose = () => {
-  closeModal.addEventListener('click' , () => {
-    promoModal.classList.remove('opn')
-    modalOverlay.classList.remove('open')
-  })
-  overlay.addEventListener('click' , () => {
-    promoModal.classList.remove('opn')
-    modalOverlay.classList.remove('open')
-  })
+
+// modal
+
+const domain = window.location.host
+
+function showModal(params) {
+    const modalBlock = document.querySelector('.modal-block ')
+    const buttonsShowModal = document.querySelectorAll('.v-promo-poster')
+    buttonsShowModal.forEach((el)=>{
+        el.addEventListener('click', () => {
+            modalBlock.classList.remove('hide-modal')
+            document.querySelector('html').style.overflow='hidden'
+        })
+    })
 }
-modalClose()
+
+showModal()
+
+function closeModal(params) {
+    const modalBlock = document.querySelector('.modal-block ')
+    modalBlock.addEventListener('click', (e) => {
+        if (e.target.className === 'modal-block shadow-block' || e.target.className == 'button-modal-close' || e.target.className =='close-modal'){
+            modalBlock.classList.add('hide-modal')
+            document.querySelector('html').style.overflow='unset'
+        }
+    })
+}
+
+closeModal()
 
 // menu
 
