@@ -19,14 +19,14 @@
 }
 :root {
     --main-bgcolor: #ffffff;
-    --second-text-color : #5b5b5b ;
+    --second-text-color : #87ceeb ;
     --color-white: #ffffff;
-    --color-red: #9299A2;
+    --color-red: #00bfff;
     --color-bg-2: #EAECEE;
     --fz-small:16px;
     --lh-small:20px;
-    --color-gray:#959595;
-    --main-text-color : #191919 ;
+    --color-gray:#535353;
+    --main-text-color : #535353 ;
     --color-bg-3 : #343434;
     --color-header-links : #6e6e6e;
 
