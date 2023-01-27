@@ -179,6 +179,12 @@
     position: relative;
     z-index: 55;
 }
+.upload__doc  > a {
+    justify-content: flex-start;
+}
+.upload__doc  > a > img {
+    margin-right: 10px;
+}
 
 
 
