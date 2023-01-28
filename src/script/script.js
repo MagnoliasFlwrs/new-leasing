@@ -139,8 +139,26 @@ const domain = window.location.host
 function showModal(params) {
     const modalBlock = document.querySelector('.modal-block ')
     const buttonsShowModal = document.querySelectorAll('.v-promo-poster')
+    const modalInfo = document.querySelector('.modal__info-block')
     buttonsShowModal.forEach((el)=>{
-        el.addEventListener('click', () => {
+        el.addEventListener('click', (e) => {
+            const title = e.target.closest('.v-promo-poster').querySelector('.promo-poster__title').innerHTML
+            const inner = e.target.closest('.v-promo-poster').querySelector('.promo-poster__content').innerHTML
+            const image = e.target.closest('.v-promo-poster').querySelector('.promo-poster__image').src
+            const modalBlockInfoWrap = document.createElement('div')
+            modalBlockInfoWrap.classList.add('modal__info-wrap')
+            const modalTitle = document.createElement('p')
+            modalTitle.classList.add('modal_title')
+            modalTitle.innerHTML = title
+            const modalInfoItems = document.createElement('div')
+            modalInfoItems.classList.add('modal__info-items')
+            modalInfoItems.innerHTML = inner
+            const modalInfoImg = document.createElement('img')
+            modalInfoImg.classList.add('modal__info-imgage')
+            modalInfoImg.src = image
+            modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+            modalInfo.appendChild(modalBlockInfoWrap)
+
             modalBlock.classList.remove('hide-modal')
             document.querySelector('html').style.overflow='hidden'
         })
@@ -154,12 +172,16 @@ function closeModal(params) {
     modalBlock.addEventListener('click', (e) => {
         if (e.target.className === 'modal-block shadow-block' || e.target.className == 'button-modal-close' || e.target.className =='close-modal'){
             modalBlock.classList.add('hide-modal')
+            const modalInfo = document.querySelector('.modal__info-block')
+            modalInfo.innerHTML = ""
             document.querySelector('html').style.overflow='unset'
         }
     })
 }
 
 closeModal()
+
+
 
 // menu
 

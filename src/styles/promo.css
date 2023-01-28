@@ -125,6 +125,12 @@
     object-position: right;
     max-width: 100%;
 }
+.promo__img-size {
+    margin-right: -100px !important;
+    margin-bottom: -100px;
+    height: 390px;
+
+}
 .promo-poster--alt .promo-poster__dd-arrow-wrapper {
     display: none;
 }
