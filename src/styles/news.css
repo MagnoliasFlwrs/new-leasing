@@ -85,7 +85,7 @@
 }
 .news-poster--big .news-poster__title {
     font-size: 2em;
-    line-height: 2;
+    line-height: 1.5;
 }
 .news-poster__text {
     margin-top: 16px;
