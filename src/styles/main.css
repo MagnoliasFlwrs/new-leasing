@@ -29,6 +29,8 @@
     --main-text-color : #535353 ;
     --color-bg-3 : #343434;
     --color-header-links : #6e6e6e;
+    --news-dark-color : #111111;
+    --news-light-color :#959595;
 
 }
 ul , ol ,li {
