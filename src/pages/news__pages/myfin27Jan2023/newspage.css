@@ -67,13 +67,17 @@
     margin-right: 24px;
 }
 .news__section-info-block {
-    display: flex;
-    justify-content: space-between;
     margin-top: 50px;
 }
 .news__section-info-block-big {
-    width: 60%;
+    width: 75%;
 
+}
+.news__section-info-block-author {
+    width: 100%;
+    text-align: end;
+    font-style: italic;
+    margin-top: 25px;
 }
 .news__section-info-block-small {
     width: 20%;

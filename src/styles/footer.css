@@ -56,6 +56,7 @@
     text-decoration: underline;
     color: var(--color-red);
 }
+
 .open-content {
     max-height: 0;
     overflow: hidden;

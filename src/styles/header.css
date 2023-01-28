@@ -146,6 +146,9 @@
     cursor: pointer;
     color: #6e6e6e;
 }
+.second__submenu__li > a:hover {
+    color: var(--color-red);
+}
 
 /* .navigation > li:hover .submenu__wrapper {
     top: 70px;
