@@ -35,6 +35,15 @@
     justify-content: space-between;
     margin-right: 10px;
 }
+.footer__arrows-open::before {
+    content: '\f078';
+    color: #595959;
+    font-family: FontAwesome;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-right: 10px;
+}
 .footer__arrows , .footer__body-right > ul > li > a > h3{
     display: flex;
     font-size: 14px;
@@ -46,6 +55,31 @@
 .footer__arrows:hover ,  .footer__body-right > ul > li > a > h3:hover ,.up__block-wrap > ul > li > a:hover {
     text-decoration: underline;
     color: var(--color-red);
+}
+.open-content {
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height 2s ease
+}
+.open-content--show {
+    max-height: 300px;
+}
+.open-content > ul {
+    padding-left: 20px;
+}
+.open-content > ul > li > a> span {
+    display: inline;
+    border-bottom: 1px solid transparent;
+    transition: all .3s linear;
+    color: #a8a8a8;
+}
+.open-content > ul > li > a> span:hover {
+    display: inline;
+    border-bottom: 1px solid transparent;
+    transition: all .3s linear;
+    text-decoration: underline;
+    color: var(--color-red);
+    color: #a8a8a8;
 }
 .footer__body-right > ul > li > button {
     padding: 12px 16px;

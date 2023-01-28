@@ -250,4 +250,15 @@ function showSubMenu(subMenu) {
 
 }
 
+//footer menu
+
+const openMenu = document.querySelectorAll('.footer__arrows');
+openMenu.forEach((el) => {
+  el.addEventListener('click', () => {
+    el.classList.toggle('footer__arrows-open')
+    el.nextElementSibling.classList.toggle('open-content--show')
+  });
+})
+
+
 
