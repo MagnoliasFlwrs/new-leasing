@@ -155,6 +155,7 @@ function showModal(params) {
             modalInfoItems.innerHTML = inner
             const modalInfoImg = document.createElement('img')
             modalInfoImg.classList.add('modal__info-imgage')
+            modalInfoImg.classList.add('mdl')
             modalInfoImg.src = image
             modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
             modalInfo.appendChild(modalBlockInfoWrap)
