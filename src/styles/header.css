@@ -192,10 +192,6 @@
 
 
 @media (max-width: 1200px) {
-    .logo > img {
-        width: 80%;
-        height: 80%;
-    }
     .nav__btn {
         padding: 7px 10px;
         font-size: 14px;
@@ -205,10 +201,6 @@
     }
 }
 @media (max-width: 985px) {
-    .logo > img {
-        width: 75%;
-        height: 75%;
-    }
     .logo {
         left: 12px;
     }

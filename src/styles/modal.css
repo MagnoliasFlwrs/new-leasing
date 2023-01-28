@@ -103,11 +103,18 @@
     line-height: 1.4;
     font-weight: 400;
 }
+.form-modal-block > h2 {
+    margin-bottom: 20px;
+}
 .my-text-area {
     width: 100%;
     resize: none;
     border: 1px solid #ced4da;
     padding: 10px 15px;
+}
+.my-text-area::placeholder {
+    color: gray;
+    font-size: 1rem;
 }
 .modal-separator {
     width: 100%;
@@ -154,11 +161,12 @@
 }
 
 .modal-block .modal-content .form-modal-block .button-send-modal-data button {
-    background-color: #24387f;
+    background-color: var(--color-red);
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     width: 120px;
     height: 40px;
     border-radius: 5px;
