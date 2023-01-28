@@ -231,6 +231,7 @@
     object-fit: contain;
     object-position: right;
     max-width: 100%;
+    border-radius: 16px;
 }
 .modal__info-wrap {
     padding: 20px 50px 0 0;
