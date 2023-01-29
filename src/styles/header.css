@@ -115,7 +115,9 @@
 }
 .second__submenu__li {
     margin-bottom: 15px;
+    cursor: pointer;
 }
+
 
 .nav__btn {
     cursor: pointer;
@@ -138,7 +140,7 @@
     line-height: 1.6;
     font-weight: 600;
 }
-.second__submenu__li > a {
+.second__submenu__li > p , .second__submenu__li > a {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -146,7 +148,7 @@
     cursor: pointer;
     color: #6e6e6e;
 }
-.second__submenu__li > a:hover {
+.second__submenu__li > a:hover , .second__submenu__li > p:hover {
     color: var(--color-red);
 }
 
@@ -184,6 +186,7 @@
 }
 .upload__doc  > a {
     justify-content: flex-start;
+    align-items: center;
 }
 .upload__doc  > a > img {
     margin-right: 10px;

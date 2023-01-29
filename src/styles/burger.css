@@ -183,3 +183,6 @@ body._lock {
 .burger__pdf , .burger__doc {
     display: flex ;
 }
+.burger__pdf > a > img , .burger__doc > a > img {
+    margin-right: 5px ;
+}

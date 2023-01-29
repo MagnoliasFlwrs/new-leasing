@@ -11,6 +11,7 @@ const linkWraps = document.querySelectorAll('.link__wrapper')
 const overlay = document.querySelector('.overlay');
 const burgerLinks = document.querySelectorAll('.burger__navigation__item')
 const submenuWrapper = document.querySelector('.submenu__wrapper')
+const newsSlides = document.querySelectorAll('.news__slide')
 
 
 // slider
@@ -20,22 +21,33 @@ slides.forEach((slide) => {
     sliderBtnPrev.style.visibility = 'visible'
   })
 })
-
-
-newsSlider.addEventListener('mouseenter' , ()=> {
-    if (sliderBtnNext.classList.contains('.swiper-button-disabled')) {
-      sliderBtnPrev.style.visibility = 'visible'
-    } else if (sliderBtnPrev.classList.contains('.swiper-button-disabled')) {
-      sliderBtnNext.style.visibility = 'visible'
-    } else {
-      sliderBtnNext.style.visibility = 'visible'
-      sliderBtnPrev.style.visibility = 'visible'
-    }
+newsSlides.forEach((slide) => {
+  slide.addEventListener('mouseenter' ,() => {
+    sliderBtnNext.style.visibility = 'visible'
+    sliderBtnPrev.style.visibility = 'visible'
+  })
 })
-newsSlider.addEventListener('mouseleave' , ()=> {
-  sliderBtnNext.style.visibility = 'hidden'
-  sliderBtnPrev.style.visibility = 'hidden'
-})
+
+// newsSlider.forEach((slide) => {
+//   slide.addEventListener('mouseenter' ,() => {
+//     sliderBtnNext.style.visibility = 'visible'
+//     sliderBtnPrev.style.visibility = 'visible'
+//   })
+// })
+// newsSlider.addEventListener('mouseenter' , ()=> {
+//     if (sliderBtnNext.classList.contains('.swiper-button-disabled')) {
+//       sliderBtnPrev.style.visibility = 'visible'
+//     } else if (sliderBtnPrev.classList.contains('.swiper-button-disabled')) {
+//       sliderBtnNext.style.visibility = 'visible'
+//     } else {
+//       sliderBtnNext.style.visibility = 'visible'
+//       sliderBtnPrev.style.visibility = 'visible'
+//     }
+// })
+// newsSlider.addEventListener('mouseleave' , ()=> {
+//   sliderBtnNext.style.visibility = 'hidden'
+//   sliderBtnPrev.style.visibility = 'hidden'
+// })
 // scroll
 
 let scrollpos = window.scrollY
@@ -140,6 +152,7 @@ function showModal(params) {
     const modalBlock = document.querySelector('.modal-block ')
     const buttonsShowModal = document.querySelectorAll('.v-promo-poster')
     const modalInfo = document.querySelector('.modal__info-block')
+    const menuLinks = document.querySelectorAll('.second__submenu__li')
     buttonsShowModal.forEach((el)=>{
         el.addEventListener('click', (e) => {
             const title = e.target.closest('.v-promo-poster').querySelector('.promo-poster__title').innerHTML
@@ -164,6 +177,173 @@ function showModal(params) {
             document.querySelector('html').style.overflow='hidden'
         })
     })
+
+    menuLinks.forEach((link) => {
+      link.addEventListener('click' ,  (e) => {
+        if (e.target.closest('.submenu__item').querySelector('.submenu__item-title-h').innerHTML === 'Аудио/Видео техника'  ) {
+            const modalBlockInfoWrap = document.createElement('div')
+            modalBlockInfoWrap.classList.add('modal__info-wrap')
+            const modalTitle = document.createElement('p')
+            modalTitle.classList.add('modal_title')
+            modalTitle.innerHTML = 'Аудио/Видео техника'
+            const modalInfoItems = document.createElement('div')
+            modalInfoItems.classList.add('modal__info-items')
+            modalInfoItems.innerHTML = `
+            <ul>
+            <li>Телефоны </li>
+            <li>Ноутбуки<br></li>
+            <li>Телевизоры</li>
+        </ul>
+            `
+            const modalInfoImg = document.createElement('img')
+            modalInfoImg.classList.add('modal__info-imgage')
+            modalInfoImg.classList.add('mdl')
+            modalInfoImg.src = './src/images/promo/tv.png'
+            modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+            modalInfo.appendChild(modalBlockInfoWrap)
+
+            modalBlock.classList.remove('hide-modal')
+            document.querySelector('html').style.overflow='hidden'
+        }
+        if (e.target.closest('.submenu__item').querySelector('.submenu__item-title-h').innerHTML ==='Бытовая техника' ) {
+          const modalBlockInfoWrap = document.createElement('div')
+          modalBlockInfoWrap.classList.add('modal__info-wrap')
+          const modalTitle = document.createElement('p')
+          modalTitle.classList.add('modal_title')
+          modalTitle.innerHTML = 'Бытовая техника'
+          const modalInfoItems = document.createElement('div')
+          modalInfoItems.classList.add('modal__info-items')
+          modalInfoItems.innerHTML = `
+          <ul>
+          <li>Встраиваемая техника </li>
+          <li>Пылесосы<br></li>
+          <li>Кондиционеры</li>
+      </ul>
+          `
+          const modalInfoImg = document.createElement('img')
+          modalInfoImg.classList.add('modal__info-imgage')
+          modalInfoImg.classList.add('mdl')
+          modalInfoImg.src = './src/images/promo/stiralka.png'
+          modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+          modalInfo.appendChild(modalBlockInfoWrap)
+
+          modalBlock.classList.remove('hide-modal')
+          document.querySelector('html').style.overflow='hidden'
+      }
+      if (e.target.closest('.submenu__item').querySelector('.submenu__item-title-h').innerHTML ==='Дом, дача, ремонт' ) {
+        const modalBlockInfoWrap = document.createElement('div')
+        modalBlockInfoWrap.classList.add('modal__info-wrap')
+        const modalTitle = document.createElement('p')
+        modalTitle.classList.add('modal_title')
+        modalTitle.innerHTML = 'Дом, дача, ремонт'
+        const modalInfoItems = document.createElement('div')
+        modalInfoItems.classList.add('modal__info-items')
+        modalInfoItems.innerHTML = `
+        <ul>
+                                                            <li>Освещение и интерьер</li>
+                                                            <li>Электроинструмент</li>
+                                                            <li>Садовая техника<br></li>
+
+                                                        </ul>
+        `
+        const modalInfoImg = document.createElement('img')
+        modalInfoImg.classList.add('modal__info-imgage')
+        modalInfoImg.classList.add('mdl')
+        modalInfoImg.src = './src/images/promo/home.png'
+        modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+        modalInfo.appendChild(modalBlockInfoWrap)
+
+        modalBlock.classList.remove('hide-modal')
+        document.querySelector('html').style.overflow='hidden'
+    }
+    if (e.target.closest('.submenu__item').querySelector('.submenu__item-title-h').innerHTML ==='Спорт инвентарь' ) {
+      const modalBlockInfoWrap = document.createElement('div')
+      modalBlockInfoWrap.classList.add('modal__info-wrap')
+      const modalTitle = document.createElement('p')
+      modalTitle.classList.add('modal_title')
+      modalTitle.innerHTML = 'Спорт инвентарь'
+      const modalInfoItems = document.createElement('div')
+      modalInfoItems.classList.add('modal__info-items')
+      modalInfoItems.innerHTML = `
+      <ul>
+                                                            <li>Тренажеры</li>
+                                                            <li>Для активного отдыха<br></li>
+                                                            <li>Гаджеты и аксессуары</li>
+                                                        </ul>
+      `
+      const modalInfoImg = document.createElement('img')
+      modalInfoImg.classList.add('modal__info-imgage')
+      modalInfoImg.classList.add('mdl')
+      modalInfoImg.src = './src/images/promo/sport.webp'
+      modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+      modalInfo.appendChild(modalBlockInfoWrap)
+
+      modalBlock.classList.remove('hide-modal')
+      document.querySelector('html').style.overflow='hidden'
+    }
+    if (e.target.closest('.submenu__item').querySelector('.submenu__item-title-h').innerHTML ==='Автомобильные товары' ) {
+      const modalBlockInfoWrap = document.createElement('div')
+      modalBlockInfoWrap.classList.add('modal__info-wrap')
+      const modalTitle = document.createElement('p')
+      modalTitle.classList.add('modal_title')
+      modalTitle.innerHTML = 'Автомобильные товары'
+      const modalInfoItems = document.createElement('div')
+      modalInfoItems.classList.add('modal__info-items')
+      modalInfoItems.innerHTML = `
+      <ul>
+      <li>Магнитолы</li>
+      <li>Регистраторы<br></li>
+      <li>Автокресла</li>
+    </ul>
+      `
+      const modalInfoImg = document.createElement('img')
+      modalInfoImg.classList.add('modal__info-imgage')
+      modalInfoImg.classList.add('mdl')
+      modalInfoImg.src = './src/images/promo/wheel.png'
+      modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+      modalInfo.appendChild(modalBlockInfoWrap)
+
+      modalBlock.classList.remove('hide-modal')
+      document.querySelector('html').style.overflow='hidden'
+    }
+    if (e.target.innerHTML ==='Хочу стать партнером' || e.target.closest('.submenu__item').querySelector('.submenu__item-title-h').innerHTML ==='О Лайт Лизинг'   ) {
+      console.log(e.target.closest('.submenu__item').querySelector('.submenu__item-title-h').innerHTML)
+      const modalBlockInfoWrap = document.createElement('div')
+      modalBlockInfoWrap.classList.add('modal__info-wrap')
+      const modalTitle = document.createElement('p')
+      modalTitle.classList.add('modal_title')
+      modalTitle.innerHTML = 'Стать партнером'
+      const modalInfoImg = document.createElement('img')
+      modalInfoImg.classList.add('modal__info-imgage')
+      modalInfoImg.classList.add('mdl')
+      modalInfoImg.src = './src/images/partners.png'
+      modalBlockInfoWrap.append(modalTitle ,modalInfoImg)
+      modalInfo.appendChild(modalBlockInfoWrap)
+
+      modalBlock.classList.remove('hide-modal')
+      document.querySelector('html').style.overflow='hidden'
+    }
+    if (e.target.innerHTML ==='Работа') {
+      console.log(e.target.closest('.submenu__item').querySelector('.submenu__item-title-h').innerHTML)
+      modalInfo.innerHTML = ""
+      const modalBlockInfoWrap = document.createElement('div')
+      modalBlockInfoWrap.classList.add('modal__info-wrap')
+      const modalTitle = document.createElement('p')
+      modalTitle.classList.add('modal_title')
+      modalTitle.innerHTML = 'Работа'
+      const modalInfoImg = document.createElement('img')
+      modalInfoImg.classList.add('modal__info-imgage')
+      modalInfoImg.classList.add('mdl')
+      modalInfoImg.src = './src/images/job.png'
+      modalBlockInfoWrap.append(modalTitle ,modalInfoImg)
+      modalInfo.appendChild(modalBlockInfoWrap)
+
+      modalBlock.classList.remove('hide-modal')
+      document.querySelector('html').style.overflow='hidden'
+    }
+      })
+
+    })
 }
 
 showModal()
@@ -181,7 +361,177 @@ function closeModal(params) {
 }
 
 closeModal()
+function checkBurgerMenu() {
+  const modalBlock = document.querySelector('.modal-block ')
+    const buttonsShowModal = document.querySelectorAll('.v-promo-poster')
+    const modalInfo = document.querySelector('.modal__info-block')
+  const burgerSubLinks = document.querySelectorAll('.burger__link')
+  burgerSubLinks.forEach((link) => {
+    link.addEventListener('click' ,(e) => {
+      if (e.target.closest('.burger__submenu__item').querySelector('.link__to__second').innerHTML ==='Аудио/Видео техника' ) {
+        const modalBlockInfoWrap = document.createElement('div')
+        modalBlockInfoWrap.classList.add('modal__info-wrap')
+        const modalTitle = document.createElement('p')
+        modalTitle.classList.add('modal_title')
+        modalTitle.innerHTML = 'Аудио/Видео техника'
+        const modalInfoItems = document.createElement('div')
+        modalInfoItems.classList.add('modal__info-items')
+        modalInfoItems.innerHTML = `
+        <ul>
+        <li>Телефоны </li>
+        <li>Ноутбуки<br></li>
+        <li>Телевизоры</li>
+    </ul>
+        `
+        const modalInfoImg = document.createElement('img')
+        modalInfoImg.classList.add('modal__info-imgage')
+        modalInfoImg.classList.add('mdl')
+        modalInfoImg.src = './src/images/promo/tv.png'
+        modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+        modalInfo.appendChild(modalBlockInfoWrap)
 
+        modalBlock.classList.remove('hide-modal')
+        document.querySelector('html').style.overflow='hidden'
+    }
+    if (e.target.closest('.burger__submenu__item').querySelector('.link__to__second').innerHTML ==='Бытовая техника' ) {
+      const modalBlockInfoWrap = document.createElement('div')
+      modalBlockInfoWrap.classList.add('modal__info-wrap')
+      const modalTitle = document.createElement('p')
+      modalTitle.classList.add('modal_title')
+      modalTitle.innerHTML = 'Бытовая техника'
+      const modalInfoItems = document.createElement('div')
+      modalInfoItems.classList.add('modal__info-items')
+      modalInfoItems.innerHTML = `
+      <ul>
+      <li>Встраиваемая техника </li>
+      <li>Пылесосы<br></li>
+      <li>Кондиционеры</li>
+  </ul>
+      `
+      const modalInfoImg = document.createElement('img')
+      modalInfoImg.classList.add('modal__info-imgage')
+      modalInfoImg.classList.add('mdl')
+      modalInfoImg.src = './src/images/promo/stiralka.png'
+      modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+      modalInfo.appendChild(modalBlockInfoWrap)
+
+      modalBlock.classList.remove('hide-modal')
+      document.querySelector('html').style.overflow='hidden'
+  }
+  if (e.target.closest('.burger__submenu__item').querySelector('.link__to__second').innerHTML ==='Дом, дача, ремонт' ) {
+    const modalBlockInfoWrap = document.createElement('div')
+    modalBlockInfoWrap.classList.add('modal__info-wrap')
+    const modalTitle = document.createElement('p')
+    modalTitle.classList.add('modal_title')
+    modalTitle.innerHTML = 'Дом, дача, ремонт'
+    const modalInfoItems = document.createElement('div')
+    modalInfoItems.classList.add('modal__info-items')
+    modalInfoItems.innerHTML = `
+    <ul>
+                                                        <li>Освещение и интерьер</li>
+                                                        <li>Электроинструмент</li>
+                                                        <li>Садовая техника<br></li>
+
+                                                    </ul>
+    `
+    const modalInfoImg = document.createElement('img')
+    modalInfoImg.classList.add('modal__info-imgage')
+    modalInfoImg.classList.add('mdl')
+    modalInfoImg.src = './src/images/promo/home.png'
+    modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+    modalInfo.appendChild(modalBlockInfoWrap)
+
+    modalBlock.classList.remove('hide-modal')
+    document.querySelector('html').style.overflow='hidden'
+}
+if (e.target.closest('.burger__submenu__item').querySelector('.link__to__second').innerHTML ==='Спорт инвентарь' ) {
+  const modalBlockInfoWrap = document.createElement('div')
+  modalBlockInfoWrap.classList.add('modal__info-wrap')
+  const modalTitle = document.createElement('p')
+  modalTitle.classList.add('modal_title')
+  modalTitle.innerHTML = 'Спорт инвентарь'
+  const modalInfoItems = document.createElement('div')
+  modalInfoItems.classList.add('modal__info-items')
+  modalInfoItems.innerHTML = `
+  <ul>
+                                                        <li>Тренажеры</li>
+                                                        <li>Для активного отдыха<br></li>
+                                                        <li>Гаджеты и аксессуары</li>
+                                                    </ul>
+  `
+  const modalInfoImg = document.createElement('img')
+  modalInfoImg.classList.add('modal__info-imgage')
+  modalInfoImg.classList.add('mdl')
+  modalInfoImg.src = './src/images/promo/sport.webp'
+  modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+  modalInfo.appendChild(modalBlockInfoWrap)
+
+  modalBlock.classList.remove('hide-modal')
+  document.querySelector('html').style.overflow='hidden'
+}
+if (e.target.closest('.burger__submenu__item').querySelector('.link__to__second').innerHTML ==='Автомобильные товары' ) {
+  const modalBlockInfoWrap = document.createElement('div')
+  modalBlockInfoWrap.classList.add('modal__info-wrap')
+  const modalTitle = document.createElement('p')
+  modalTitle.classList.add('modal_title')
+  modalTitle.innerHTML = 'Автомобильные товары'
+  const modalInfoItems = document.createElement('div')
+  modalInfoItems.classList.add('modal__info-items')
+  modalInfoItems.innerHTML = `
+  <ul>
+  <li>Магнитолы</li>
+  <li>Регистраторы<br></li>
+  <li>Автокресла</li>
+</ul>
+  `
+  const modalInfoImg = document.createElement('img')
+  modalInfoImg.classList.add('modal__info-imgage')
+  modalInfoImg.classList.add('mdl')
+  modalInfoImg.src = './src/images/promo/wheel.png'
+  modalBlockInfoWrap.append(modalTitle, modalInfoItems ,modalInfoImg)
+  modalInfo.appendChild(modalBlockInfoWrap)
+
+  modalBlock.classList.remove('hide-modal')
+  document.querySelector('html').style.overflow='hidden'
+}
+if (e.target.innerHTML ==='Хочу стать партнером' || e.target.innerHTML ==='Стать партнером'   ) {
+  const modalBlockInfoWrap = document.createElement('div')
+  modalBlockInfoWrap.classList.add('modal__info-wrap')
+  const modalTitle = document.createElement('p')
+  modalTitle.classList.add('modal_title')
+  modalTitle.innerHTML = 'Стать партнером'
+  const modalInfoImg = document.createElement('img')
+  modalInfoImg.classList.add('modal__info-imgage')
+  modalInfoImg.classList.add('mdl')
+  modalInfoImg.src = './src/images/partners.png'
+  modalBlockInfoWrap.append(modalTitle ,modalInfoImg)
+  modalInfo.appendChild(modalBlockInfoWrap)
+
+  modalBlock.classList.remove('hide-modal')
+  document.querySelector('html').style.overflow='hidden'
+}
+if (e.target.innerHTML ==='Работа') {
+  modalInfo.innerHTML = ""
+  const modalBlockInfoWrap = document.createElement('div')
+  modalBlockInfoWrap.classList.add('modal__info-wrap')
+  const modalTitle = document.createElement('p')
+  modalTitle.classList.add('modal_title')
+  modalTitle.innerHTML = 'Работа'
+  const modalInfoImg = document.createElement('img')
+  modalInfoImg.classList.add('modal__info-imgage')
+  modalInfoImg.classList.add('mdl')
+  modalInfoImg.src = './src/images/job.png'
+  modalBlockInfoWrap.append(modalTitle ,modalInfoImg)
+  modalInfo.appendChild(modalBlockInfoWrap)
+
+  modalBlock.classList.remove('hide-modal')
+  document.querySelector('html').style.overflow='hidden'
+}
+
+    })
+  })
+}
+checkBurgerMenu()
 
 
 // menu
@@ -252,10 +602,10 @@ function showSubMenu(subMenu) {
 
 //footer menu
 
-const openMenu = document.querySelectorAll('.footer__arrows');
+const openMenu = document.querySelectorAll('.arrow__item');
 openMenu.forEach((el) => {
   el.addEventListener('click', () => {
-    el.classList.toggle('footer__arrows-open')
+    el.classList.toggle('arrow__item-open')
     el.nextElementSibling.classList.toggle('open-content--show')
   });
 })
