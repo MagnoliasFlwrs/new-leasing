@@ -162,3 +162,11 @@ openMenu.forEach((el) => {
     el.nextElementSibling.classList.toggle('open-content--show')
   });
 })
+
+// slider
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = ItcSlider.getOrCreateInstance('.itc-slider' , {
+    loop: true,
+    swipe: false
+  });
+});

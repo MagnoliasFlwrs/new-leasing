@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./newspage.css">
 
     <title>Document</title>
@@ -303,20 +302,39 @@
                         <p>Если кратко: большинство ИП больше не могут пользоваться упрощённой системой налогообложения (УСН). Также планируется, что с 1 января 2023 года будет введён налог на профессиональный доход и повысится налоговая ставка.
                         </p>
                         <p>Все подробности — в карточках. </p>
-                        <div class="swiper new__kodeks-swiper">
-                            <div class="swiper-wrapper">
-                               <div class="swiper-slide"><img src="../../../images/news/2-nalogovyj-kodeks-2022.jpg" alt=""></div>
-                               <div class="swiper-slide"><img src="../../../images/news/3-nalogovyj-kodeks-2022.jpg" alt=""</div>
-                               <div class="swiper-slide"><img src="../../../images/news/5-nalogovyj-kodeks-2022.jpg" alt=""</div>
-                               <div class="swiper-slide"><img src="../../../images/news/6-nalogovyj-kodeks-2022.jpg" alt=""</div>
-                               <div class="swiper-slide"><img src="../../../images/news/7-nalogovyj-kodeks-2022.jpg" alt=""</div>
-                               <div class="swiper-slide"><img src="../../../images/news/8-nalogovyj-kodeks-2022.jpg" alt=""</div>
-                               <div class="swiper-slide"><img src="../../../images/news/9-nalogovyj-kodeks-2022.jpg" alt=""</div>
-                               <div class="swiper-slide"><img src="../../../images/news/11-nalogi.png" alt=""</div>
 
+                        <div class="itc-slider">
+                            <div class="itc-slider__wrapper">
+                              <div class="itc-slider__items">
+                                <div class="itc-slider__item">
+                                    <img src="../../../images/news/2-nalogovyj-kodeks-2022.jpg" alt="">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="../../../images/news/3-nalogovyj-kodeks-2022.jpg" alt="">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="../../../images/news/5-nalogovyj-kodeks-2022.jpg" alt="">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="../../../images/news/6-nalogovyj-kodeks-2022.jpg" alt="">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="../../../images/news/7-nalogovyj-kodeks-2022.jpg" alt="">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="../../../images/news/8-nalogovyj-kodeks-2022.jpg" alt="">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="../../../images/news/9-nalogovyj-kodeks-2022.jpg" alt="">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="../../../images/news/11-nalogi.png" alt="">
+                                </div>
+                              </div>
                             </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+
+                            <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                            <button class="itc-slider__btn itc-slider__btn_next"></button>
                           </div>
 
 
@@ -439,36 +457,7 @@
         </div>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-
-
-        const swiper = new Swiper(".new__kodeks-swiper", {
-            slidesPerView: "auto",
-            centeredSlides: false,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: '.slider_arrow--next',
-                prevEl: '.slider_arrow--prev',
-                disabledClass:'swiper-button-disabled',
-            },
-            breakpoints: {
-                300: {
-                slidesPerView: 1,
-                spaceBetween: 10
-                },
-                640: {
-                slidesPerView: 2,
-                spaceBetween: 20
-                },
-                1124: {
-                slidesPerView: 3,
-                spaceBetween: 30
-                }
-            },
-        });
-    </script>
+    <script src="../../../script/itc-slider.min.js"></script>
     <script src="../../../script/script__light.js"></script>
 </body>
 </html>

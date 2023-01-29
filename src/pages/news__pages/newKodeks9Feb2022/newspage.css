@@ -3,6 +3,7 @@
 @import url(../../../styles/header.css);
 @import url(../../../styles/burger.css);
 @import url(../../../styles/footer.css);
+@import url(../../../styles/itc-slider.min.css);
 
 .news__section {
     padding: 86px 0 ;
@@ -16,16 +17,16 @@
 .breadcrumbs > li {
 
 }
-.new__kodeks-swiper {
-    width: 100%;
-    display: flex;
-    overflow: hidden;
+.itc-slider__item {
+    flex: 0 0 48%;
+    max-width: 48%;
 }
-.swiper-slide img {
-    display: block;
+.itc-slider__item > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    padding: 0 10px;
 }
 
 .breadcrumbs  a {
