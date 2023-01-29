@@ -140,6 +140,10 @@
     .news__section-info-block-small {
         width: 100%;
     }
+    .itc-slider__item {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
 }
 @media (max-width:485px) {
     .breadcrumbs {
