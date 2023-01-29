@@ -1,6 +1,8 @@
 const slides = document.querySelectorAll('.swiper-slide')
 const sliderBtnPrev = document.querySelector('.slider_arrow--prev')
 const sliderBtnNext = document.querySelector('.slider_arrow--next')
+const sliderBtnPrev2 = document.querySelector('.slider_arrow--prev2')
+const sliderBtnNext2 = document.querySelector('.slider_arrow--next2')
 const burgerMenu = document.querySelector('.burger');
 const burgerWrap = document.querySelector('.burger__wrap');
 const newsSlider = document.querySelector('.news__swiper')
@@ -23,8 +25,8 @@ slides.forEach((slide) => {
 })
 newsSlides.forEach((slide) => {
   slide.addEventListener('mouseenter' ,() => {
-    sliderBtnNext.style.visibility = 'visible'
-    sliderBtnPrev.style.visibility = 'visible'
+    sliderBtnNext2.style.visibility = 'visible'
+    sliderBtnPrev2.style.visibility = 'visible'
   })
 })
 
